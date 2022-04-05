@@ -1,0 +1,38 @@
+.game-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid darkgray;
+  box-shadow: 0px 0px 1px 3px inset rgba(50, 50, 50, .2);
+  border-radius: 3px;
+  cursor: default;
+}
+.game-cell.game-cell-close {
+  background-color: gray;
+  content-visibility: hidden;
+  cursor: pointer;
+}
+.game-cell.game-cell-close:hover {
+  background-color: #a0a0a0;
+}
+.game-cell.game-cell-empty {
+  background-color: #f7f4f4;
+  content-visibility: hidden;
+}
+.game-cell.game-flag {
+  background-color: gray;
+  cursor: not-allowed;
+  content-visibility: visible;
+}
+.game-cell.game-question {
+  background-color: gray;
+  content-visibility: visible;
+}
+.game-cell.game-mine {
+  background-color: #f7f4f4;
+  content-visibility: visible;
+}
